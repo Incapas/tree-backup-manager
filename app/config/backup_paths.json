@@ -1,0 +1,10 @@
+{
+"primary_backup_path": {
+    "src": "",
+    "dest": ""
+},
+"secondary_backup_path": {
+    "src": "",
+    "dest": ""
+}
+}
