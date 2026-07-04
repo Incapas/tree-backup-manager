@@ -60,10 +60,6 @@ def normalize_path(path_str: str) -> Optional[Path]:
 def _is_windows_path(path: str) -> bool:
     """Détecte si une chaîne de caractères représente un chemin au format Windows.
 
-    Identifie les formats Windows courants:
-    - Chemins locaux: "C:\", "D:\Users\..."
-    - Chemins UNC: "\\server\share", "\\\\server\\share"
-
     Args:
         path (str): La chaîne de caractères à analyser.
 
@@ -74,7 +70,7 @@ def _is_windows_path(path: str) -> bool:
     if len(path) >= 2 and path[1] == ":" and path[0].isalpha():
         return True
 
-    # Vérifie la présence d'un chemin UNC (ex: "\\server\share" ou "\\\\server\\share")
+    # Vérifie la présence d'un chemin UNC
     if path.startswith("\\"):
         return True
 
