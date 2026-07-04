@@ -1,0 +1,10 @@
+{
+  "primary_backup_path": {
+    "src": "D:\\Documents\\MyProjects",
+    "dest": "E:\\Backups\\Projects"
+  },
+  "secondary_backup_path": {
+    "src": "/home/user/documents/myprojects",
+    "dest": "/mnt/backup/projects"
+  }
+}
